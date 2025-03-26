@@ -17,7 +17,7 @@ app.get('/', (_, res) => {
 });
 
 app.get('/bacheca', (_, res) => {
-  res.send(posts);
+  res.send(JSON.stringify(posts));
 });
 
 app.listen(PORT, () => {
