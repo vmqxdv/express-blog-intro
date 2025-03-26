@@ -16,6 +16,10 @@ app.get('/', (_, res) => {
   res.send('Server del mio blog');
 });
 
+app.get('/bacheca', (_, res) => {
+  res.send(posts);
+});
+
 app.listen(PORT, () => {
   console.log(`Server avviato su http://localhost:${PORT}`);
 });
