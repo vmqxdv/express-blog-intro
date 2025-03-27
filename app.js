@@ -19,7 +19,7 @@ app.get('/', (_, res) => {
 });
 
 app.get('/bacheca', (_, res) => {
-  res.send(JSON.stringify(posts));
+  res.json(posts);
 });
 
 app.listen(PORT, () => {
